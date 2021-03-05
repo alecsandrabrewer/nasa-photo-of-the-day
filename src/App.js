@@ -9,28 +9,20 @@ function App() {
   useEffect(() => {
     axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
     .then(response => {
-      console.log(response);
+      // console.log(response.data);
       setData(response.data);
     })
     .catch(err => {
       console.log(err)
     })
   }, []);
-
+  // console.log('data', data);
   return (
     <div className="App">
-      {/* {data.Map(item => {
-        return (
-          <div>
-            <Main
-              photo = {item.hdurl}
-              copyright = {item.copyright}
-              date = {item.date}
-              explanation = {item.explanation}
-            />
-          </div>
-        )
-      })} */}
+
+    <Main
+      data = {data}
+    />
     </div>
   );
 }
