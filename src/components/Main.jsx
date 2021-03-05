@@ -1,14 +1,17 @@
 import React, {useState} from 'react';
+import "../App.css";
 
 const Main = (props) => {
     // console.log('props', props.data);
     const {hdurl, copyright, date, explanation} = props.data
     return(
-        <div>
+        <div className='container'>
             <img src = {hdurl}/>
-            <h2>{copyright}</h2>
-            <h3>{date}</h3>
-            <p>{explanation}</p>
+            <p id='exp'>{explanation}</p>
+            <div id='author'>
+                <p>{copyright}</p>
+                <p>{date}</p>
+            </div>
         </div>
     )
 }

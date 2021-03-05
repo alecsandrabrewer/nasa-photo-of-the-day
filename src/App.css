@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  width: 80%;
+  background-color: pink;
+  margin: 0 auto;
+}
+
+img{
+  width: 100%;
+}
+
+#exp {
+  display: flex;
+  align-items: center;
+  padding: 0 2%;
+  line-height: 1.3rem;
+}
+
+#author {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2%;
+}
+
+.copyright {
+  font-style:italic;
+  font-size: 1.3rem;
+  color:#6d6d6e;
+}
